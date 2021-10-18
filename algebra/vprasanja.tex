@@ -1,0 +1,199 @@
+\section{Vektorski prostor $\R^3$}
+
+\subsection{Koordinatni sistem in vektorji v prostoru}
+
+\vprasanje{Kakšen je pozitivno orientiran koordinatni sistem?}
+
+Tak, kjer je ordinatna os za $90\degree$ pozitivno rotirana od abscisne osi.
+
+\vprasanje{Kaj sestavlja koordinatni sistem v prostoru?}
+
+Tri medsebojno paroma pravokotne številske premice, ki se sekajo v koordinatnem izhodišču.
+
+\vprasanje{Kaj je krajevni vektor točke $T = (x,y,z) \in \R^3$?}
+
+To je usmerjena daljica z začetkom v izhodišču in koncem v točki $T$.
+
+\vprasanje{Kaj je vektor?}
+
+Vektor $\vec{a} = (x, y, z)$ je množica vseh usmerjenih daljic, ki jih dobimo z vzporednim premikom krajevnega vektorja do točke $T(x, y, z)$.
+
+\vprasanje{Kaj je linearna kombinacija vektorjev $\vec{a}_1, \vec{a}_2, \ldots, \vec{a}_n$?}
+
+To je vsak izraz oblike $\alpha_1 \vec{a}_1 + \alpha_2 \vec{a}_2 + \ldots + \alpha_n \vec{a}_n$, kjer so $\alpha_1, \alpha_2, \ldots, \alpha_n \in \R$.
+
+\vprasanje{Kdaj so vektorji $\vec{a}_1, \vec{a}_2, \ldots, \vec{a}_n$ linearno neodvisni? Kdaj sta dva vektorja $\vec{a}$ in $\vec{b}$ linearno odvisna?}
+
+Kadar nobeden izmed vektorjev ni enak kakšni linearni kombinaciji ostalih.
+
+Dva vektorja sta linearno odvisna, kadar velja $\vec{a} = \alpha \vec{b}$ ali $\vec{b} = \beta \vec{a}$ za neka $\alpha, \beta \in \R$. To je natanko takrat, ko sta vzporedna.
+
+\vprasanje{Kaj je baza prostora $\R^3$? Kaj je \textit{standardna baza}?}
+
+Baza prostora je množica treh linearno neodvisnih vektorjev.
+
+Standardna baza so vektorji $\vec{i} = (1, 0, 0), \vec{j} = (0, 1, 0), \vec{k} = (0, 0, 1)$.
+
+\subsection{Skalarni produkt}
+
+\vprasanje{Kaj je skalarni produkt vektorjev $\vec{a}_1 = (x_1, y_1, z_1)$ in $\vec{a}_2 = (x_2, y_2, z_2)$?}
+
+To je število $\vec{a}_1 \cdot \vec{a}_2 = x_1 x_2 + y_1 y_2 + z_1 z_2$.
+
+\vprasanje{Kaj je \textit{norma} vektorja $\vec{a}$? Kaj predstavlja?}
+
+To je število $\| \vec{a} \| = \sqrt{\vec{a} \cdot \vec{a}}$. Predstavlja dolžino vsake usmerjene daljice, ki predstavlja vektor $\vec{a}$.
+
+\vprasanje{Naštej 4 lastnosti skalarnega produkta.}
+
+\begin{enumerate}
+	\item Komutativnost: $\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$.
+	\item Distributivnost: $(\vec{a} + \vec{b}) \cdot \vec{c} = \vec{a} \cdot \vec{c} + \vec{b} \cdot \vec{c}$.
+	\item Homogenost: $(\alpha \vec{a}) \cdot \vec{b} = \alpha (\vec{a} \cdot \vec{b})$.
+	\item Pozitivna definitnost: $\vec{a} \cdot \vec{a} \ge 0$ in $\vec{a} \cdot \vec{a} = 0 \nt \vec{a} = \vec{0}$.~
+\end{enumerate}
+
+\vprasanje{Kako izračunaš kot med dvema vektorjema $\vec{a}$ in $\vec{b}$? Kaj je kriterij za pravokotnost vektorjev?}
+
+\[
+	\cos \phi = \frac{\vec{a} \cdot \vec{b}}{\norm{\vec{a}} \norm{\vec{b}}}
+\]
+Kjer je $\phi$ kot med vektorjema.
+
+Kriterij za pravokotnost: $\vec{a} \perp \vec{b} \nt \vec{a} \cdot \vec{b} = 0$.
+
+\subsection{Vektorski produkt}
+
+\vprasanje{Kaj je vektorski produkt vektorjev $\vec{a}$ in $\vec{b}$?}
+
+To je vektor $\vec{a} \x \vec{b}$, za katerega velja:
+\begin{itemize}
+	\item pravokoten je na $\vec{a}$ in na $\vec{b}$.
+	\item dolžina je ploščina paralelograma, napetega na krajevna vektorja $\vec{a}$ in $\vec{b}$.
+	\item trojica $(\vec{a}, \vec{b}, \vec{a} \x \vec{b})$ je pozitivno orientirana.
+\end{itemize}
+
+\vprasanje{Kakšen je predpis za vektorski produkt?}
+
+\[
+	(x_1, y_1, z_1) \x (x_2, y_2, z_2) = 
+	\begin{vmatrix}
+		\vec{i} & \vec{j} & \vec{k} \\
+		x_1 & y_1 & z_1 \\
+		x_2 & y_2 & z_2
+	\end{vmatrix}
+\]
+
+\vprasanje{Povej 3 lastnosti vektorskega produkta.}
+
+\begin{itemize}
+	\item Antikomutativnost: $\vec{a} \x \vec{b} = - \vec{b} \x \vec{a}$.
+	\item Distributivnost: $\vec{a} \x (\vec{a} + \vec{c}) = \vec{a} \x \vec{b} + \vec{a} \x \vec{c}$.
+	\item Homogenost: $(\alpha \vec{a}) \x \vec{b} = \vec{a} \x (\alpha \vec{b}) = \alpha (\vec{a} \x \vec{b})$
+\end{itemize}
+
+\subsection{Mešani produkt}
+
+\vprasanje{Kaj je mešani produkt vektorjev $\vabc$ ? Kakšen je njegov predpis?}
+
+To je število $[ \vabc ] = (\vec{a} \x \vec{b}) \cdot \vec{c}$.
+
+\[
+	[\vec{a}, \vec{b}, \vec{c}] = \begin{vmatrix}
+		x_1 &  y_1 & z_1 \\
+		x_2 & y_2 & z_2 \\
+		x_3 & y_3 & z_3
+	\end{vmatrix}
+\]
+
+\vprasanje{Kakšna je geometrijska interpretacija mešanega produkta?}
+
+Mešani produkt $[\vabc]$ je volumen paralelepipeda, napetega na vektorje $\vec{a}$, $\vec{b}$ in $\vec{c}$, pomnožen z orientacijo urejene trojice $(\vabc)$.
+
+\vprasanje{Kako izračunamo prostornino nepravilnega tetraedra, določenega z vektorji $\vabc$ ?}
+
+\[
+	V = {{1 \over 6} \left| [\vabc] \right|}
+\]
+
+\vprasanje{Povej 2 lastnosti mešanega produkta.}
+
+\begin{enumerate}
+	\item Asociativnost v vseh faktorjih: $[\vec{a}_1 + \vec{a}_2, \vec{b}, \vec{c}] = [\vec{a}_1, \vec{b}, \vec{c}] + [\vec{a}_2, \vec{b}, \vec{c}]$.
+	\item Homogenost: $\alpha [\vabc] = [\alpha \vec{a}, \vec{b}, \vec{c}] = [\vec{a}, \alpha \vec{b}, \vec{c}] = [\vec{a}, \vec{b}, \alpha \vec{c}]$.
+\end{enumerate}
+
+\vprasanje{Kaj je Lagrangeva identiteta?}
+
+\[
+	(\vec{a} \x \vec{b}) \cdot (\vec{c} \x \vec{d}) = \begin{vmatrix}
+		\vec{a} \vec{c} & \vec{a} \vec{d} \\
+		\vec{b} \vec{c} & \vec{b} \vec{d}
+	\end{vmatrix}
+\]
+
+\section{Premice in ravnine v $\R^3$}
+
+\subsection{Enačbe ravnin}
+
+\vprasanje{Kaj je enačba ravnine?}
+
+Enačba ravnine $\Sigma$ je taka enačba v spremenljivkah $x,y,z$, da velja:
+\begin{itemize}
+	\item Če točka $T(a,b,c)$ leži na $\Sigma$, potem $a, b, c$ zadoščajo enačbi.
+	\item Če $T \notin \Sigma$, pa $a, b, c$ ne zadoščajo enačbi.
+\end{itemize}
+
+\vprasanje{Kaj je normala ravnine? Koliko normal ima ravnina? Kaj še potrebujemo, da natanko določimo ravnino, poleg normale?}
+
+Normala ravnine je poljuben neničelen vektor, ki je pravokoten na ravnino.
+
+Ravnina ima več normal, vse izmed katerih so si vzporedne.
+
+Ravnina je natanko določena z normalo in eno točko na ravnini.
+
+\vprasanje{Kakšne splošne oblike je enačba ravnine? Kako iz te oblike preberemo normalo? Ali je enačba ravnine enolična?}
+
+Splošna oblika: $ax + by + cz + d = 0$, $a, b, c$ niso vsi $0$.
+
+Normala take ravnine je $(a, b, c)$.
+
+Enačba ravnine ni enolična, saj lahko enačbo pomnožimo z poljubnih neničelnim skalarjem, in še vedno predstavlja isto ravnino.
+
+\vprasanje{Kaj je \textit{normalna enačba ravnine}? Kako je z njeno enoličnostjo?}
+
+To je poseben primer enačbe ravnine $ax + by + cz + d = 0$, kjer ima normala $(a, b, c)$ dolžino $1$. Je enolična do predznaka natančno, lahko jo pomnožimo z $-1$.
+
+\vprasanje{Podaj enačbo ravnine skozi tri nekolinearne točke $(x_0, y_0, z_0), (x_1, y_1, z_1), (x_2, y_2, z_2)$.}
+
+\[
+	\begin{vmatrix}
+		x-x_0 & y - y_0 & z - z_0 \\
+		x_1-x_0 & y_1 - y_0 & z_1 - z_0 \\
+		x_2-x_0 & y_2 - y_0 & z_2 - z_0
+	\end{vmatrix} = 0
+\]
+
+\subsection{Razdalja do ravnine}
+
+\vprasanje{Kaj je razdalja med točko $T_1$ in ravnino? Navedi njeno formulo z uporabo normale $\vec{n}$, krajevnega vektorja do točke na ravnini $\vec{r}_0$ ter krajevnega vektorja do točke $T_1$, $\vec{r}_1$.}
+
+To je najkrajša razdalja $\Delta$ med $T_1$ in kakšno točko na ravnini.
+
+\[
+	\Delta = \left| \frac{\vec{n}(\vec{r}_1 - \vec{r}_0)}{\norm{\vec{n}}} \right|
+\]
+
+\vprasanje{Navedi formulo za razdaljo točke $T(x_0,y_0,z_0)$ od ravnine z enačbo $ax + by + cz +d = 0$.}
+
+\[
+	\Delta = \left| \frac{ax_0 + by_0 + cz_0 + d}{\sqrt{a^2 + b^2 + c^2}} \right|
+\]
+
+\vprasanje{Kaj je razdalja med dvema vzporednima ravninama?}
+
+To je razdalja med poljubno točko na eni ravnini in drugo ravnino.
+
+\vprasanje{Kaj je razdalja med premico in njej vzporedno ravnino?}
+
+To je razdalja med poljubno točko na premici in ravnino.

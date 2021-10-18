@@ -1,0 +1,148 @@
+\section{Množice in preslikave}
+
+\subsection{Osnovno o množicah}
+
+\vprasanje{Kaj je \textit{ekstenzionalnost množic}?}
+
+To je pravilo, ki trdi, da sta množici enaki, če imata iste elemente; oz. če je vsak element prve množice tudi element druge množice, in obratno.
+
+\vprasanje{Kako zapišemo prazno množico in standardni enojec?}
+
+Prazna množica: $\{\}$ ali $\emptyset$
+
+Standardni enojec: $1 = \{()\}$
+
+\vprasanje{Kaj je \textit{enojec}?}
+
+Množica $A$ je enojec, kadar velja:
+\begin{itemize}
+	\item obstaja $x \in A$
+	\item če $x \in A$ in $y \in A$, potem $x = y$
+\end{itemize}
+
+\subsection{Konstrukcije množic}
+
+\vprasanje{Kaj sta zmnožek in vsota množic? Kako se drugače imenujeta?}
+
+Zmnožek ali \textit{kartezični produkt} množic $A$ in $B$ je nova množica $A \x B$, katere elementi so urejeni pari $(x,y), x \in A, y \in B$.
+
+Vsota ali \textit{koprodukt} množic $A$ in $B$ je množica $A + B$, katere elementi so $\inj{1} x$ za $x \in A$ ter $\inj{2} y$ za $y \in B$.
+
+\vprasanje{Kaj je projekcija $\prj{i} u$ in kaj injekcija $\inj{i} x$?}
+
+$\prj{i} u$ označuje $i$-to komponento urejenega para $u$.
+
+$\inj{i} x$ je simbol, s katerim ločimo elemente različnih množic pri seštevanju.
+
+\subsection{Preslikave}
+
+\vprasanje{Katere tri komponente ima preslikava?}
+
+Domeno, kodomeno in prirejanje.
+
+Prirejanje mora biti: (za preslikavo $f: A \desno B$)
+\begin{itemize}
+	\item \textit{Celovito}: Za vsak $x \in A$ obstaja $y \in B$, ki mu je prirejen.
+	\item \textit{Enolično}: Če sta elementu $x \in A$ prirejena elementa $y$ in $z \in B$, potem $y = z$.
+\end{itemize}
+
+\vprasanje{Kaj je eksponent množic $A$ in $B$?}
+
+To je množica $B^A$, katere elementi so preslikave z domeno $A$ in kodomeno $B$.
+
+\vprasanje{Koliko je preslikav $A \desno \emptyset$ in koliko preslikav $\emptyset \desno A$?}
+
+Preslikava $\emptyset \desno A$ je ena sama.
+
+Preslikav $A \desno \emptyset, A \ne \emptyset$ ni.
+
+\subsection{Uporabne preslikave}
+
+\vprasanje{Kaj je identiteta?}
+
+Je preslikava $\id{A}: A \desno A$ za poljubno množico $A$; $\id{A}: x \slika x$.
+
+\vprasanje{Kaj je kompozitum preslikav? Povej dve njegovi računski lastnosti.}
+
+Kompozitum preslikav $f: A \desno B$ in $g: B \desno C$ je preslikava $g \circ f: A \desno C$, ki $x \slika g(f(x))$.
+
+Kompozitum je asociativen in ima nevtralen element - identiteto.
+
+\vprasanje{Kaj je \textit{evalvacija}? Kako jo še imenujemo?}
+
+Evalvacija, \textit{aplikacija} ali \textit{uporaba} je preslikava, ki sprejme preslikavo in argument, ter preslikavo uporabi na argumentu.
+
+$\text{ev}: B^A \x A \desno B$\\
+$\text{ev}: (f, x) \slika f(x)$
+
+\subsection{Izomorfizem}
+
+\vprasanje{Kdaj je $f: A \desno B$ inverz $g: B \desno A$? Kako imenujemo preslikavo, ki ima inverz? Kako označimo inverz take preslikave?}
+
+Kadar velja $f \circ g = \id{B}$ in $g \circ f = \id{A}$.
+
+Preslikavo $f$ z inverzom imenujemo \textit{izomorfizem} in jo označimo z $f^{-1}$.
+
+\vprasanje{Kaj velja za kompozitum dveh izomorfnih preslikav $f, g$? Kaj velja za njegov inverz?}
+
+Tudi kompozitum je izomorfizem. Za njegov inverz velja:
+$(g \circ f)^{-1} = f^{-1} \circ g^{-1}$
+
+\vprasanje{Kdaj sta dve množici $A, B$ izomorfni? Kako to zapišemo?}
+
+Množici sta izomorfni, če obstaja izomorfizem iz $A$ v $B$.
+
+To zapišemo $A \cong B$.
+
+\vprasanje{Katere tri lastnosti veljajo za $\cong$?}
+
+Refleksivnost, simetričnost, tranzitivnost.
+
+\section{Simbolni zapis}
+
+\vprasanje{Povej primer levo in primer desno asocirane operacije.}
+
+Levo asocirana: $+, -, \x, \ldots$
+
+Desno asocirana: $\potem, \desno, \ldots$
+
+\vprasanje{Kaj so implicitni argumenti? Povej primer.}
+
+To so argumenti operatorja, ki jih pogosto izpustimo; takrat mora bralec iz konteksta izvesti, kaj naj bi te argumenti bili; npr.\ množici v zapisu projekcije $\text{pr}_1^{A,B}$.
+
+\vprasanje{Kakšna je razlika med implicitnimi argumenti in privzeto vrednostjo? Povej primer privzete vrednosti.}
+
+Pri privzeti vrednosti smo dogovorjeni, s čim naj nadomestimo izpuščeno vrednost, pri implicitnih argumentih pa so vrednosti vedno drugačne in razvidne iz konteksta. Primer je $\log x = \log_{10} x$.
+
+\subsection{Logične formule}
+
+\vprasanje{Kateri dve vrsti logičnih formul poznamo? Kaj je razlika med njima?}
+
+\begin{itemize}
+	\item \textit{Izjavni račun}: Zapisujemo izjave z osnovnimi vezniki
+	\item \textit{Predikatni račun}: Za zapisovanje uporabimo tudi predikate, t.j. operatorje $=, \ne, \le, \ldots, \forall, \exists$.
+\end{itemize}
+
+\vprasanje{Kako zapišemo resnico, neresnico, negacijo, konjunkcijo in disjunkcijo?}
+
+\begin{itemize}
+	\item Resnica: $\resnica$
+	\item Neresnica: $\neresnica$
+	\item Negacija: $\neg$
+	\item Konjunkcija: $\land$
+	\item Disjunkcija: $\lor$
+\end{itemize}
+
+\vprasanje{Kako se imenujeta argumenta pri implikaciji? Kako se jih na dolgo bere?}
+
+\[
+	\text{Antecedent} \potem \text{Konsekvent}
+\]
+
+Antecedent je zadosten pogoj za konsekvent.
+
+Konsekvent je potreben pogoj za antecedent.
+
+\vprasanje{Katera kvantifikatorja poznamo?}
+
+Univerzalni kvantifikator ($\forall$) in eksistenčni kvantifikator ($\exists$).

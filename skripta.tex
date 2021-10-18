@@ -1,0 +1,32 @@
+\documentclass[11pt]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+
+\include{commands}
+\include{analiza/commands}
+\include{lmn/commands}
+\include{algebra/commands}
+
+\setlength{\parindent}{0cm}
+
+\title{Vprašanja in odgovori: Združeno}
+\author{Patrik Žnidaršič}
+\date{Verzija iz dne \today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Analiza}
+\include{analiza/vprasanja}
+
+\chapter{Logika in množice}
+\include{lmn/vprasanja}
+
+\chapter{Algebra}
+\include{algebra/vprasanja}
+	
+\end{document}

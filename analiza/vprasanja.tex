@@ -1,0 +1,131 @@
+\section{Števila}
+
+\subsection{Naravna števila}
+
+\vprasanje{Kako označimo naslednjika naravnega števila $n$?}
+
+\[n^+\]
+
+\vprasanje{Kaj so Peanovi aksiomi?}
+
+So aksiomi, ki definirajo množico $\N$ skupaj s pravilom, ki vsakemu naravnemu številu $n$ priredi naslednjika $n^+$ ($n, n^+ \in \N$):
+\begin{itemize}
+	\item Za vsaka $n, m \in \N$ in $m^+ = n^+$ velja $m=n$
+	\item Obstaja število $1 \in \N$, ki ni naslednjik od nobenega naravnega števila
+	\item \textbf{Aksiom popolne indukcije}: Če $A \subset \N$ in če je $1 \in A$ in če je za vsak $n \in A$ tudi $n^+ \in A$, potem je $A = \N$.
+\end{itemize}
+
+\vprasanje{Kdaj je množica \textit{dobro urejena}? Povej primer takšne množice. Povej primer množice, ki ni dobro urejena.}
+
+Kadar ima vsaka neprazna podmnožica najmanjši element. Dobro urejena je npr. $\N$, ne pa $\Z$.
+
+\subsection{Racionalna števila}
+
+\vprasanje{Kdaj ulomka $\frac{m}{n}$ in $\frac{k}{l}$ predstavljata isto število?}
+
+Kadar je $ml = nk$.
+
+\vprasanje{Kaj so ulomki?}
+
+Množica $\Z \x \N = \{(m, n); m \in \Z, n \in \N \}$.
+
+\vprasanje{Kaj je racionalno število?}
+
+Množico $\Z \x \N$ razdelimo na ekvivalenčne razrede:
+\[
+	(m, n) \sim (k, l) \nt ml = nk \quad \forall m, k \in \Z, \forall n, l \in \N
+\]
+
+Racionalno število je ekvivalenčni razred urejenih parov in ga označimo z $\frac{m}{n}$:
+
+\[
+	\frac{m}{n} = \{(k, l), ml = nk\}
+\]
+
+\vprasanje{Kateri trije aksiomi veljajo za grupe? Kateri dodatni velja za Abelove grupe?}
+
+Za grupe veljajo naslednji aksiomi: (prikazani simboli za množico $A$ in dvočlen operator $+: A \x A \rightarrow A$)
+\begin{enumerate}
+	\item Asociativnost: $(a+b)+c = a+(b+c) \quad \forall a, b, c \in A$
+	\item Obstoj enote: obstaja $0 \in A$, tako da za vsak $a \in A$ velja $0+a = a+0 = a$
+	\item Obstoj inverznega elementa: za vsak $a \in A$ obstaja inverzni element $-a \in A$, tako da velja $a + (-1) = (-a) + a = 0$
+\end{enumerate}
+
+Za \textit{Abelove} (oz. \textit{komutativne}) grupe velja tudi aksiom komutativnosti:
+
+\[
+	a + b = b + a \quad \forall a, b \in A
+\]
+
+\vprasanje{Povej primer Abelove grupe in grupe, ki ni komutativna.}
+
+Abelova grupa: $(\Q, +)$ ali $(\Q \brez \{0\}, \cdot)$
+
+Grupa, ki ni komutativna: $(\N, +)$
+
+\vprasanje{Kako označimo enoto in inverzni element $a$ za seštevanje in množenje?}
+
+Za seštevanje: $0$, $-a$
+
+Za množenje: $1$, $a^{-1}$
+
+\vprasanje{Povej pravilo krajšanja za seštevanje v grupi $A$ z operacijo $+: A \x A \rightarrow A$}
+
+Naj bodo $a, x, y \in A$. Če velja $a + x = a + y$, potem je $x=y$.
+
+\vprasanje{Kaj je \textit{komutativen obseg}? Kako ga še drugače imenujemo? Povej primer.}
+
+To je množica $A$ z operacijama $+, \cdot$, kjer je $(A, +)$ Abelova grupa za seštevanje, $(A \brez \{0\}, \cdot)$ Abelova grupa za množenje, veljata pa še dva aksioma:
+
+\begin{enumerate}
+	\item $1 \ne 0$ (enota za seštevanje ni enaka enoti za množenje)
+	\item Aksiom distributivnosti: Za vse $a, b, c \in A$ velja $a(b+c) = ab+ac$.
+\end{enumerate}
+
+Komutativen obseg imenujemo tudi \textit{polje}. Primer je $(\Q, +, \cdot)$~
+
+\vprasanje{Kaj je \textit{urejen obseg}?}
+
+To je obseg, ki ima urejenost, ki ustreza naslednjima aksiomoma:
+
+\begin{enumerate}
+	\item Za vsako število $a \in A, a \ne 0$ velja, da je natanko eno od števil $a, -a$ pozitivno.
+	\item Za vsaki pozitivni števili $a, b \in A$ sta $a + b$ in $a \cdot b$ pozitivni.
+\end{enumerate}
+
+\vprasanje{Kako je definirana urejenost v urejenem obsegu?}
+
+\[
+	a < b \nt b - a \; \text{je pozitivno} \quad a, b \in A
+\]
+
+\subsection{Realna števila}
+
+\vprasanje{Kaj je Dedekinov rez? Definiraj množico realnih števil. Kako jo označimo?}
+
+To je vsaka podmnožica $A \subset \Q$, za katero velja:
+\begin{enumerate}
+	\item $A \ne \emptyset, A \ne \Q$
+	\item za vsak $p \in A$ in za vsak $q \in \Q, q < p$, je tudi $q \in A$
+	\item za vsak $p \in A$ obstaja $q \in A$, da je $q > p$
+\end{enumerate}
+
+Realna števila so množica vseh rezov. Označimo jo z $\R$.
+
+\vprasanje{Kako je definiran nasprotni element reza $A$?}
+
+$-A = \{p \in \Q; \text{ obstaja } r \in \Q, r > 0: -p-r \notin A \}$.
+
+\vprasanje{Kdaj je rez $A$ pozitiven?}
+
+Kadar $0^* \subset A \land 0^* \ne A$.
+
+\vprasanje{Naj bo $B$ urejen obseg. Kdaj je množica $A \subset B$ navzgor omejena? Kako imenujemo najmanjšo od vseh zgornjih mej, če obstaja?}
+
+Kadar obstaja $M \in B$, da velja $a \le M$ za vsak $a \in A$.
+
+Najmanjšo zgornjo mejo imenujemo \textit{natančna zgornja meja} ali \textit{supremum} množice $A$; označimo ga s $\sup A$.
+
+\vprasanje{Kaj je maksimum množice $A$?}
+
+To je največji element množice $A$, če obstaja. Označimo ga s $\max A$.
