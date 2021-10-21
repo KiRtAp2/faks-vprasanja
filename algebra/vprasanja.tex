@@ -197,3 +197,51 @@ To je razdalja med poljubno točko na eni ravnini in drugo ravnino.
 \vprasanje{Kaj je razdalja med premico in njej vzporedno ravnino?}
 
 To je razdalja med poljubno točko na premici in ravnino.
+
+\subsection{Enačbe premic}
+
+\vprasanje{Kaj je enačba premice v prostoru?}
+
+Sistem dveh linearnih enačb v spremenljivkah $x, y, z$, da velja: $T(a,b,c)$ leži na premici natanko takrat, ko $a, b, c$ zadostujejo obema enačbama.
+
+\vprasanje{Kaj je smerni vektor premice? Kaj še potrebujemo, da premico popolnoma definiramo?}
+
+Smerni vektor premice je poljuben neničelni vektor, ki je premici vzporeden. Da enolično določimo premico, potrebujemo še eno točko na premici.
+
+\vprasanje{Povej vektorsko enačbo premice ter enačbo premice po komponentah.}
+
+\[
+	\vec{r} = \vec{r}_0 + \lambda \vec{s}
+\]
+
+Kjer je $\vec{r}$ poljuben vektor, $\vec{r}_0$ krajevni vektor do točke na premici, $\lambda$ neko realno število in $\vec{s}$ smerni vektor premice.
+
+\[
+	\frac{x-x_0}{a} = \frac{y-y_0}{b} = \frac{z-z_0}{c}
+\]
+
+Kjer so $x, y, z$ koordinate do poljubne točke, $x_0, y_0, z_0$ koordinate točke na premici ter $a, b, c$ komponente smernega vektorja premice.
+
+\subsection{Razdalja do premice}
+
+\vprasanje{Povej enačbo za razdaljo točke $T_1$ s krajevnim vektorjem $\vec{r}_1$ od premice z enačbo $\vec{r} = \vec{r}_0 + \lambda \vec{s}$.}
+
+\[
+	\Delta = \frac{\norm{(\vec{r}_1 - \vec{r}_0) \x \vec{s}}}{\norm{\vec{s}}}
+\]
+
+\vprasanje{Čemu je enaka razdalja med dvema vzporednima premicama?}
+
+Razdalji med poljubno točko na eni premici in drugo premico.
+
+\vprasanje{Povej enačbo za razdaljo med dvema mimobežnima premicama. Kdaj se nevzporedni premici sekata?}
+
+\[
+	\Delta = \frac{\left|[\vec{r}_2 - \vec{r_1}, \vec{s}_1, \vec{s}_2]\right|}{\norm{\vec{s}_1 \x \vec{s}_2}}
+\]
+
+Kjer sta $\vec{r}_1, \vec{r}_2$ krajevna vektorja do dveh točk na premicah (ena točka na premico), $\vec{s}_1$ in $\vec{s}_2$ pa smerna vektorja premic.
+
+Dve nevzporedni premici se sekata, kadar je navedeni mešani produkt $0$.
+
+\section{Osnovne algebraične strukture}
