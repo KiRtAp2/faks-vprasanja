@@ -1,0 +1,74 @@
+\section{Mestni zapis števil}
+
+\vprasanje{Kako zapišemo število $n \in \N$ z osnovo $c$?}
+
+Število zaporedoma delimo s $c$, ostanek pri deljenju pa zapišemo na ustrezno mesto. Ker potence $c, c^2, c^3, \ldots$ naraščajo preko vsake meje, lahko tako zapišemo vsako naravno število.
+
+\vprasanje{Kako razširimo mestni zapis na racionalna števila? Kakšna slabost se tako prikaže?}
+
+Tako, da primerjamo število tudi z negativnimi eksponenti. Slabost je, da tako dobljen zapis ni enoličen.
+
+\section{Zaporedja}
+
+\vprasanje{Kaj je aritmetično zaporedje? Kako izračunamo vsoto prvih $n$ členov takega zaporedja?}
+
+To je zaporedje, kjer je razlika med sosednjima členoma konstantna.
+
+\[
+	S_n = \frac{n(a_0 + a_n)}{2} = \frac{n(2a + (n-1)d)}{2} = na + \frac{n(n-1)}{2}d
+\]
+
+\vprasanje{Kaj je geometrijsko zaporedje? Kako izračunamo vsoto prvih $n$ členov takega zaporedja?}
+
+To je zaporedje, kjer je kvocient med dvema sosednjima členoma konstanten.
+
+\[
+	S_n = \frac{a_1 (q^n - 1)}{q-1}
+\]
+
+Če pa je $q=1$:
+
+\[
+	S_n = na_1
+\]
+
+\vprasanje{Kako izračunamo vsoto neskončnega geometrijskega zaporedja?}
+
+Če je $\left|q\right| < 1$:
+\[
+	S = \frac{a_1}{1-q}
+\]
+
+\section{Razstavljanje izrazov}
+
+\vprasanje{Razstavi $a^2-b^2$, $a^3-b^3$, $a^3+b^3$, $a^n-b^n$ in $a^n+b^n$ za nek $n \in \N$. Ali obstaja kakšna omejitev glede izbire $n$?}
+
+\[
+	a^2-b^2 = (a-b)(a+b)
+\]
+
+\[
+	a^3-b^3 = (a-b)(a^2 + ab + b^2)
+\]
+
+\[
+	a^3 + b^3 = (a+b)(a^2-ab+b^2)
+\]
+
+\[
+	a^n - b^n = (a-b)(a^{n-1} + a^{n-2}b + \ldots + b^{n-1})
+\]
+
+\[
+	a^n + b^n = (a+b)(a^{n-1} - a^{n-2}b + \ldots + b^{n-1})
+\]
+
+Zadnji razcep velja le za lihe $n$.
+
+\section{Kompleksna števila}
+
+\vprasanje{Kaj je kompleksno število? Kaj je njegovo konjugirano število?}
+
+Kompleksno število je urejen par realnih števil, zapišemo ga z $z = x+yi;\, x,y \in \R, i^2 = -1$.
+
+Njegovo konjugirano število je $\overline{z} = x - yi$.
