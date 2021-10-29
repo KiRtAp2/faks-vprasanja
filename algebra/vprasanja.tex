@@ -283,3 +283,38 @@ Monoid je polgrupa z enoto, npr.~$(\R, \cdot)$.
 \vprasanje{Kaj je grupa? Podaj primer. Kdaj je grupa komutativna?}
 
 To je monoid, v katerem je vsak element obrnljiv, npr. $(\Z, +)$. Grupa je komutativna, kadar velja $a \circ b = b \circ a$ za vsaka $a, b$ elementa grupe.
+
+\vprasanje{Do katerega $n$ so končne grupe velikosti $n$ komutativne?}
+
+Do $n=5$.
+
+\vprasanje{Kaj je permutacija končne množice $A$? Kako označimo grupo permutacij množice $A$ z $n$ elementi in operacijo $\circ$? Koliko elementov ima?}
+
+Permutacija na množici $A$ je bijektivna preslikava $A \desno A$. Množico vseh permutacij označimo z $S(A)$, grupo $(S(A), \circ)$ pa z $S_n$. Imenujemo jo \textit{simetrična grupa} reda $n$, ima pa $n!$ elementov.
+
+\vprasanje{V kakšni obliki običajno pišemo permutacije?}
+
+\[
+	\Pi = \begin{pmatrix}
+		1 & 2 & 3 & \ldots & n \\
+		\Pi(1) & \Pi(2) & \Pi(3) & \ldots & \Pi(n)
+	\end{pmatrix}
+\]
+
+\vprasanje{Katere grupe permutacij s kompozitumom so komutativne?}
+
+Samo $S_2$.
+
+\vprasanje{Kaj je cikel? Kako ga označimo?}
+
+Naj bodo $a_1, a_2, \ldots, a_k \in \{1, 2, \ldots, n\}$ paroma različni. Permutacija $\sigma \in S_n$, definirana s predpisom $\sigma(a_1) = a_2, \sigma(a_2) = a_3, \ldots, \sigma(a_{k-1}) = a_k, \sigma(a_k) = a_1$ in $\sigma(x) = x$ za $x \in \{1, 2, \ldots, n\} \brez {a_1, a_2, \ldots, a_k}$ se imenuje cikel dolžine $k$. Označimo ga z $\begin{pmatrix}
+a_1 & a_2 & \ldots & a_k
+\end{pmatrix}$.
+
+\vprasanje{Kdaj sta dva cikla disjunktna? Kakšno lastnost imata?}
+
+Cikla sta disjunktna, če pripadajoči množici elementov, ki v ciklu niso slike samih sebe, nimata skupnih elementov. Disjunktna cikla vedno komutirata.
+
+\vprasanje{Kako se imenuje cikel z dolžino $2$?}
+
+Transpozicija.
