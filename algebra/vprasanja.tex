@@ -318,3 +318,38 @@ Cikla sta disjunktna, če pripadajoči množici elementov, ki v ciklu niso slike
 \vprasanje{Kako se imenuje cikel z dolžino $2$?}
 
 Transpozicija.
+
+\vprasanje{Kako je definiran znak permutacije?}
+
+$s(\id{{}} ) = 1$.
+
+Za cikel $\sigma$ dolžine $k$ je $s(\sigma) = (-1)^{k+1}.$
+
+Za permutacijo $\Pi$, razdeljeno na cikle, je $s(\Pi) = s(\sigma_1) s(\sigma_2) \ldots s(\sigma_m)$.
+
+\vprasanje{Kakšen je znak produkta permutacije s transpozicijo? Kdaj je permutacija soda in kdaj liha? Kakšen znak ima inverz sode permutacije?}
+
+Nasproten znaku permutacije. Permutacija je soda, če jo lahko zapišemo kot produkt sodega števila transpozicij. Permutacija je liha, če jo lahko zapišemo kot produkt lihega števila transpozicij. Inverz sode permutacije ima enak znak kot soda permutacija.
+
+\vprasanje{Kaj je \textit{alternirajoča grupa} reda $n$? Kakšne moči je?}
+
+To je grupa \[
+	A_n = \{\Pi \in S_n | \, \Pi \, \text{je soda permutacija}\}
+\] z močjo $n! \over 2$.
+
+\subsection{Podgrupe}
+
+\vprasanje{Kaj je podgrupa?}
+
+Naj bo $(G, \cdot)$ grupa. Neprazna podmnožica $H \subseteq G$ je podgrupa $G$, kadar velja:
+
+\begin{itemize}
+	\item Zaprtost za množenje: Če sta $a, b \in H$, potem $ab \in H$.
+	\item Zaprtost za invertiranje: Če je $a \in H$, je tudi $a^{-1} \in H$.
+\end{itemize}
+
+\vprasanje{Kateri dve podgrupi ima vsaka grupa $G$ moči $2$ ali več?}
+
+\textit{Neprava} podgrupa: $G$.
+
+\textit{Trivialna} podgrupa: $\{\text{enota}\}$.
