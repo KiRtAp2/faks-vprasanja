@@ -98,7 +98,7 @@ To zapišemo $A \cong B$.
 
 Refleksivnost, simetričnost, tranzitivnost.
 
-\section{Simbolni zapis}
+\section{Logika in simbolni zapis}
 
 \vprasanje{Povej primer levo in primer desno asocirane operacije.}
 
@@ -147,7 +147,7 @@ Konsekvent je potreben pogoj za antecedent.
 
 Univerzalni kvantifikator ($\forall$) in eksistenčni kvantifikator ($\exists$).
 
-\section{Definicije in dokazi}
+\subsection{Definicije in dokazi}
 
 \vprasanje{Kako dokažeš enolični obstoj? Kako ga označiš?}
 
@@ -161,8 +161,39 @@ To je operator $\iota x \in A.\phi(x)$, s katerim določimo enolično opisan ele
 
 Kontekst je skupek vseh trenutno veljavnih simbolov in predpostavk. Vanj uvedemo novo spremenljivko z definicijo ($x := \ldots$) ali prosto ("`Naj bo $x \in A$"').
 
-\subsection{Dokazovanje}
-
 \vprasanje{Kako se s pravili vpeljave dokaže implikacijo, ekvivalenco, univerzalno izjavo in eksistenčno izjavo?}
 
 Za implikacijo predpostavimo levo stran in dokažemo desno. Za ekvivalenco dokažemo obe implikaciji. Za univerzalno izjavo dokažemo $\phi(x)$ za poljuben $x \in A$. Za eksistenčno izjavo podamo nek $x$, dokažemo $x \in A$ in dokažemo $\phi(x)$.
+
+\subsection{Boolova algebra}
+
+\vprasanje{Kako imenujemo spremenljivko z vrednostjo iz $2 = \{\resnica, \neresnica\}$? Kakšna je Boolova preslikava? Kaj je tavtologija?}
+
+Izjavna spremenljivka.
+
+Boolova preslikava je vsaka preslikava $\underbrace{2 \x 2 \x 2 \x \ldots \x 2}_n \slika 2$.
+
+Tavtologija je izjava, katere resničnostna vrednost je vedno resnica, ne glede na vrednost spremenljivk.
+
+\vprasanje{Kakšna je disjunktna oblika izjave?}
+
+\[
+	\phi(p_1,p_2,\ldots,p_n) = c_1 \lor c_2 \lor \ldots \lor c_m
+\]
+
+Kjer so \[
+	c_i = l_1 \land l_2 \land \ldots \land l_n
+\]
+in \[
+	l_j = p_j \text{ ali } \lnot p_j
+\]
+
+\vprasanje{Kdaj je nabor logičnih veznikov poln? Povej primer polnega nabora.}
+
+Kadar lahko s temi vezniki izrazimo vsako resničnostno tabelo; npr. $\land, \lor, \lnot$.
+
+\vprasanje{Definiraj karakteristično preslikavo in potenčno množico.}
+
+Karakteristična preslikava je preslikava $A \desno 2$.
+
+Potenčna množica $P(A)$ je množica, katere elementi so podmnožice $A$.
