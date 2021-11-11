@@ -353,3 +353,57 @@ Naj bo $(G, \cdot)$ grupa. Neprazna podmnožica $H \subseteq G$ je podgrupa $G$,
 \textit{Neprava} podgrupa: $G$.
 
 \textit{Trivialna} podgrupa: $\{\text{enota}\}$.
+
+\vprasanje{Kdaj je neprazna podmnožica $H$ grupe $(G, \cdot)$ tudi podgrupa $G$?}
+
+Kadar za vsaka $a, b \in H$ tudi $ab^{-1} \in H$.
+
+\subsection{Homomorfizem grup}
+
+\vprasanje{Kaj je homomorfizem grup $(G, \circ)$ in $(H, *)$? Povej primer.}
+
+To je preslikava $f: G \desno H$, za katero za vsaka $a, b \in G$ velja $f(q\circ b) = f(a) * f(b)$; npr.~preslikava $f: (\Z, +) \desno (\Q \brez \{0\}, \cdot), f(x) = 2^x$.
+
+\vprasanje{Kako homomorfizem grup preslika enoto in inverz?}
+
+Enoto preslika v enoto, inverz pa v inverz.
+
+\vprasanje{Definiraj izraze: \textit{monomorfizem}, \textit{epimorfizem}, \textit{izomorfizem}, \textit{endomorfizem} in \textit{avtomorfizem}.}
+
+Monomorfizem je injektiven homomorfizem.
+
+Epimorfizen je surjektiven homomorfizem.
+
+Izomorfizem je bijektiven homomorfizem.
+
+Endomorfizem je homomorfizem $G \desno G$.
+
+Avtomorfizem je bijektivni endomorfizem.
+
+\vprasanje{Povej primer notranjega avtomorfizma grupe $G$.}
+
+\[
+	f_a : G \desno G
+\]
+
+\[
+	x \slika a x a^{-1}
+\]
+
+\vprasanje{Kdaj sta grupi $G$ in $H$ izomorfni? Kako to označimo?}
+
+Kadar obstaja izomorfizem $G \desno H$. To označimo $G \cong H$.
+
+\vprasanje{Kaj je slika in kaj jedro homomorfizma $f$?}
+
+Slika homomorfizma je \[
+	\im f = \{f(x); x \in G\}
+\]
+
+Jedro homomorfizma je \[
+	\ker f = \{x \in G; f(x) = 1\}
+\]
+
+\vprasanje{Kako preveriš injektivnost homomorfizma $f$?}
+
+$f$ je injektiven natanko tedaj, ko je $\ker f = \{1\}$.
