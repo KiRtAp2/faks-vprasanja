@@ -247,3 +247,35 @@ Vsako konvergentno zaporedje ima natanko eno limito. Vsak konvergentna zaporedja
 \vprasanje{Kaj je stekališče zaporedja $(a_n)_n$?}
 
 To je število $s \in \R$, za katero velja, da v vsaki okolici števila $s$ leži neskončno mnogo členov zaporedja.
+
+\vprasanje{Kaj je naraščajoče in kaj monotono zaporedje?}
+
+Zaporedje $(a_n)_n$ je naraščajoče, če velja $\forall n \in \N . a_{n+1} \ge a_n$.
+
+Zaporedje je monotono, če je naraščajoče ali padajoče.
+
+\vprasanje{Definiraj podzaporedje zaporedja $(a_n)_n$.}
+
+Naj bo $(n_j)_j$ strogo naraščajoče zaporedje naravnih števil. Zaporedje $(a_{n_j})_j$ imenujemo podzaporedje zaporedja $(a_n)_n$.
+
+\vprasanje{Kaj je \textit{rep zaporedja} $a_n$?}
+
+To je vsako zaporedje $a_m, a_{m+1}, a_{m+2}, \ldots, m \in \N$.
+
+\vprasanje{Povej izrek o sendviču.}
+
+Naj bodo zaporedja $(a_n), (b_n), (c_n)$ takšna, da velja $a_n < b_n < c_n$ za vsak $n \in \N$ in denimo, da sta $(a_n)$ in $(c_n)$ konvergentni zaporedji z istima limitama. Potem je tudi $(b_n)$ konvergentno zaporedje z enako limito.
+
+\subsection{Cauchyjev pogoj}
+
+\vprasanje{Kaj je Cauchyjevo zaporedje?}
+
+Naj bo $(a_n)$ zaporedje. Pravimo, da $a_n$ izpolnjuje Cauchyjev pogoj, če za vsak $\epsilon>0$ obstaja tak $M\in\N$, da za vse $n,m\ge M$ velja $|a_n-a_m| < \epsilon$. Če zaporedje izpolnjuje ta pogoj, je to Cauchyjevo zaporedje.
+
+\vprasanje{Kdaj zaporedje konvergira proti neskončnosti?}
+
+Kadar za vsak $K \in \R$ obstaja $M \in \N$, da za vsak $n\ge M$ velja $a_n > K$.
+
+\vprasanje{Kakšni sta drugi imeni za zgornjo in spodnjo limito zaporedja? Kako sta definirani?}
+
+Limes superior in limes inferior. To sta supremum in infimum množice vseh stekališč zaporedja. 

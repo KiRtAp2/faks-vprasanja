@@ -192,8 +192,44 @@ in \[
 
 Kadar lahko s temi vezniki izrazimo vsako resničnostno tabelo; npr. $\land, \lor, \lnot$.
 
+\section{Množice}
+
 \vprasanje{Definiraj karakteristično preslikavo in potenčno množico.}
 
 Karakteristična preslikava je preslikava $A \desno 2$.
 
 Potenčna množica $P(A)$ je množica, katere elementi so podmnožice $A$.
+
+\vprasanje{Kakšna je razlika med množicami in razredi? Kako rečemo razredu, ki ne mora biti predstavljen z množico?}
+
+Množice so lahko elementi množic ali razredov, razredi pa ne.
+
+Pravi razred.
+
+\vprasanje{Kaj je potenčni razred?}
+
+To je razred $P(C) = \{D | D \subseteq C\}$, pri čemer so $D$ množice.
+
+\vprasanje{Kaj je družina množic?}
+
+To je preslikava $A: I \desno \Set$, kjer množici $I$ pravimo \textit{indeksna množica}.
+
+\vprasanje{Kaj je funkcija izbire za družino $A: I \desno \Set$?}
+
+To je prirejanje $f$, ki vsakemu indeksu $i \in I$ priredi element $f(i) \in A_i$.
+
+\vprasanje{Definiraj presek in unijo družine množic $A: I \desno \Set$. Kdaj je presek pravi razred?}
+
+\[
+	\cup A := \{x | \exists i \in I. x\in A_i\}
+\]
+
+\[
+	\cap A := \{x | \forall i \in I. x\in A_i\}
+\]
+
+Presek je pravi razred, samo če je $I$ prazen.
+
+\vprasanje{Kaj pove aksiom o uniji?}
+
+Unija družine množic je množica.
