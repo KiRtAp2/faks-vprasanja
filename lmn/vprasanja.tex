@@ -233,3 +233,51 @@ Presek je pravi razred, samo če je $I$ prazen.
 \vprasanje{Kaj pove aksiom o uniji?}
 
 Unija družine množic je množica.
+
+\vprasanje{Definiraj produkt in koprodukt družine $A: I \desno \Set$}
+
+Kartezični produkt družine je množica \[
+	\prod_{i\in I} := \{f: I \desno \bigcup_{i\in I} A_i | \forall i \in I . f(i) \in A_i\}
+\]
+
+Koprodukt je množica \[
+	\sum_{i\in I} A_i = \{\inj{i} x | i \in I, x \in A_i \}
+\]
+
+\vprasanje{Kaj sta $j$-ta projekcija in $j$-ta injekcija?}
+
+$j$-ta projekcija je preslikava $\prj{j} : f \slika f(j)$
+
+$j$-ta injekcija je preslikava $\inj{j} : A_j \desno \sum_{i\in I} A_i$
+
+\vprasanje{Simbolično zapiši za funkcijo $f: A \desno B$ lastnosti injektivnosti, surjektivnosti in bijektivnosti.}
+
+Injektivnost: \[
+	\forall x,y \in A.f(x) = f(y) \implies x = y
+\]
+
+Surjektivnost: \[
+	\forall y \in B. \exists x \in A.f(x) = y
+\]
+
+Bijektivnost: \[
+	\forall y \in B. \exists! x \in A.f(x) = y
+\]
+
+\vprasanje{Kaj je monomorfizem in kaj epimorfizem? Čemu sta ta pojma ekvivalentna?}
+
+Monomorfizem je preslikava, ki jo smemo krajšati na levi. Epimorfizem je preslikava, ki jo smemo krajšati na desni. Monomorfizem je ekvivalenten injektivnosti, epimorfizem surjektivnosti.
+
+\vprasanje{Definiraj retrakcijo in prerez.}
+
+Če sta $f: A \desno B$ in $g: B \desno C$ taki, da velja $f \circ g = \id{B}$ (ne pa nujno v drugo smer), potem pravimo, da je $f$ retrakcija in $g$ prerez.
+
+\vprasanje{Kaj je izpeljana množica?}
+
+Naj bo $f: A \desno B$. Izpeljana množica je \[\{f(x) | x\in A\} := \{y \in B | \forall x \in A. f(x)=y\}\]
+
+\vprasanje{Kaj sta slika in praslika preslikave $f: A \desno B$?}
+
+Praslika podmnožice $S \subseteq B$ je \(f^*(S) := \{x \in A | f(x) \in S\}\)
+
+Slika podmnožice \(T \subseteq A\) je \(f_*(T) := \{f(x) | x \in T\}\)
