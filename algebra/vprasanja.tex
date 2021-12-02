@@ -244,9 +244,7 @@ Kjer sta $\vec{r}_1, \vec{r}_2$ krajevna vektorja do dveh točk na premicah (ena
 
 Dve nevzporedni premici se sekata, kadar je navedeni mešani produkt $0$.
 
-\section{Osnovne algebraične strukture}
-
-\subsection{Operacije na množicah}
+\section{Grupe}
 
 \vprasanje{Kaj je binarna notranja operacija na množici $A$? Kako v splošnem imenujemo njen izhod?}
 
@@ -263,8 +261,6 @@ Algebraična struktura.
 \vprasanje{Kdaj je $a \in A$ obrnljiv?}
 
 Kadar obstaja inverz $a^{-1} \in A$, da je $a^{-1} \circ a = a \circ a^{-1} = e$.
-
-\subsection{Grupe}
 
 \vprasanje{Kaj so grupoid, polgrupa in monoid? Za vsakega povej primer.}
 
@@ -482,3 +478,33 @@ $\{0\}$
 \vprasanje{Kaj je linearna kombinacija?}
 
 To je vsak zapis oblike $\alpha_1 x_1 + \alpha_2 x_2 + \ldots + \alpha_n x_n$, kjer so $x_1, x_2, \ldots, x_n$ vektorji in $\alpha_1, \alpha_2, \ldots, \alpha_n$ skalarji.
+
+\vprasanje{Kaj je linearna ogrinjača podmnožice $M$ vektorskega prostora $V$? Kako jo označimo?}
+
+To je najmanjši vektorski podprostor prostora $V$, ki vsebuje $M$. Oznaka je $\Lin M$.
+
+\vprasanje{Kaj je linearna ogrinjača prazne množice?}
+
+$\{0\}$
+
+\vprasanje{Kaj je vsota podprostorov $W_1+ W_2+ \ldots+ W_n$? Kakšen pogoj mora biti izpolnjen, da je vsota \textit{direktna}?}
+
+To je linearna ogrinjača unije teh podprostorov.
+
+Da je vsota direktna, mora vsak $x \in W_1+W_2+\ldots+W_n$ imeti enoličen zapis $x = x_1 + x_2 + \ldots + x_n$, kjer je $x_i \in W_i$.
+
+\subsection{Linearne preslikave}
+
+\vprasanje{Kaj je linearna preslikava vektorskih prostorov $U$ in $V$ nad poljem $F$?}
+
+To je preslikava $\A: U\desno V$, če velja
+\begin{itemize}
+	\item aditivnost: $\A (x+y) = \A(x) + \A(y)$
+	\item homogenost: $\A(\alpha x) = \alpha \A(x)$
+\end{itemize}
+
+Za vsaka $x,y \in U$ ter $\alpha \in F$.
+
+\vprasanje{Kako pravimo linearnim preslikavam $\A: U \desno F$?}
+
+Linearni funkcionali.

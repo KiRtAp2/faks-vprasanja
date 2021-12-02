@@ -315,3 +315,34 @@ V takem primeru je $\lim_{n\desno \infty} a_n = 0$.
 \[
 	\sum_{n=1}^{\infty} \frac{1}{n}
 \]
+
+\vprasanje{Povej primerjalni kriterij za številski vrsti z nenegativnimi členi. Kako imenujemo taki vrsti?}
+
+Naj bosta $\vrsta$ in $\cvrsta{b}$ številski vrsti z nenegativnimi členi. Denimo, da velja $a_n \le b_n$ za vse člene. 
+
+Če je $\cvrsta{b}$ konvergentna, potem je $\vrsta$ tudi konvergentna. 
+
+Če je $\vrsta$ divergentna, je tudi $\cvrsta{b}$ divergentna. 
+
+Vrsti $\cvrsta{b}$ rečemo \textit{majoreta} vrste $\vrsta$.
+
+\vprasanje{Kdaj konvergira $\sum_{n=1}^{\infty} \frac{1}{n^p}$?}
+
+Kadar je $p > 1$.
+
+\vprasanje{Kaj je kvocientni kriterij?}
+
+Naj bo $\vrsta$ vrsta z pozitivnimi členi. Sestavimo zaporedje $d_n = \frac{a_{n+1}}{a_n}$.
+
+\begin{itemize}
+	\item Če obstaja $q \in \R, q < 1$, da velja $d_n \le q$ za vsak $n \in \N$, potem $\vrsta$ konvergira.
+	\item Če velja $d_n \ge 1$ za vsak $n\in \N$, potem vrsta divergira.
+\end{itemize}
+
+\vprasanje{Kaj je Cauchyjev kriterij za konvergenco vrst?}
+
+Naj bo $\vrsta$ vrsta z nenegativnimi členi. Sestavimo zaporedje $c_n = \sqrt[n]{a_n}$.
+\begin{itemize}
+	\item Če obstaja tak $q < 1$, da so $c_n \le q$ za vsak $n \in \N$, potem vrsta konvergira.
+	\item Če $c_n \ge 1$ za vsak $n \in \N$, potem vrsta divergira.
+\end{itemize}
