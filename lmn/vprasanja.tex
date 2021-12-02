@@ -281,3 +281,76 @@ Naj bo $f: A \desno B$. Izpeljana množica je \[\{f(x) | x\in A\} := \{y \in B |
 Praslika podmnožice $S \subseteq B$ je \(f^*(S) := \{x \in A | f(x) \in S\}\)
 
 Slika podmnožice \(T \subseteq A\) je \(f_*(T) := \{f(x) | x \in T\}\)
+
+\section{Relacije}
+
+\vprasanje{Kaj je $n$-mestna relacija? Povej dve najbolj dolgočasni relaciji.}
+
+To je predikat na $A_1 \x A_2 \x A_3 \x \ldots \x A_n$. Vedno obstajata prazna in univerzalna relacija.
+
+\vprasanje{Kako imenujemo množici v dvomestni relaciji?}
+
+Domena in kodomena.
+
+\vprasanje{Kaj je diagonala? Kako jo označimo?}
+
+To je relacija $\Delta_A \subseteq A \x A, \Delta_A = \{(x,y) \in A \x A | x=y\}$
+
+\vprasanje{Kaj je antisimetričnost, irefleksivnost, asimetričnost, sovisnost in stroga sovisnost?}
+
+\begin{itemize}
+	\item antisimetričnost: $\forall x, y \in A. x R y \land y R x \potem x=y$
+	\item irefleksivnost: $\forall x \in A.\lnot (x R x)$
+	\item asimetričnost: $\forall x, y \in A. xRy \potem \lnot (yRx)$
+	\item sovisnost: $\forall x, y \in A. x \neq y \potem x R y \lor y R x$
+	\item stroga sovisnost: $\forall x, y \in A. x R y \lor y R x$
+\end{itemize}
+
+\vprasanje{Kako so na relacijah definirani unija, presek in komplement?}
+
+\[
+	x (R \cup S) y \nt x R y \lor x S y
+\]
+
+\[
+	x (R \cap S)y \nt x R y \land x S y
+\]
+
+\[
+	x (R^\complement)y \nt \lnot (x R y)
+\]
+
+\vprasanje{Kaj je transpozicija relacije $R \subseteq A \x B$? Ali je transpozicija involucija?}
+
+To je relacija $R^T \subseteq B \x A,\quad y R^T x \nt x R y$. Transpozicija je involucija.
+
+\vprasanje{Kaj je kompozitum relacij $R \subseteq A\x B$ in $S \subseteq B\x C$? Ali je kompozitum asociativen? Ali ima enoto?}
+
+To je relacija $S \circ R \subseteq A \x C$.
+
+\[
+	S \circ R = \{(a, c) \in A\x C | \exists b \in B, aRb \land bSc\}
+\]
+
+Je asociativen, ima enoto $\Delta$.
+
+\vprasanje{Kaj je $n$-ta potenca relacije $R \subseteq A\x A$?}
+
+\[
+	R^n = \underbrace{R \circ R \circ \ldots \circ R}_{n \text{ R-jev}}
+\]
+
+\vprasanje{Kaj je funkcijska relacija? Kaj je graf funkcije $f$?}
+
+To je dvomestna relacija, ki je enolična in celovita.
+
+Graf funkcije $f$ ne relacija $\Gamma_f \subseteq A \x B, \Gamma_f = \{(a, b)  \in A \x B | f(a) = b\}$.
+
+\vprasanje{Kaj je tranzitivna ovojnica relacije $R \subseteq A \x A$?}
+
+To je relacija $T \subseteq A\x A$, da velja:
+\begin{itemize}
+	\item $T$ je tranzitivna
+	\item $R \subseteq T$
+	\item $T$ je najmanjša tranzitivna relacija, ki vsebuje $R$
+\end{itemize}

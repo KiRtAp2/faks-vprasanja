@@ -266,7 +266,9 @@ To je vsako zaporedje $a_m, a_{m+1}, a_{m+2}, \ldots, m \in \N$.
 
 Naj bodo zaporedja $(a_n), (b_n), (c_n)$ takšna, da velja $a_n < b_n < c_n$ za vsak $n \in \N$ in denimo, da sta $(a_n)$ in $(c_n)$ konvergentni zaporedji z istima limitama. Potem je tudi $(b_n)$ konvergentno zaporedje z enako limito.
 
-\subsection{Cauchyjev pogoj}
+\vprasanje{Kaj je $\lim_{n\desno \infty} \sqrt[n]{n}$?}
+
+1.
 
 \vprasanje{Kaj je Cauchyjevo zaporedje?}
 
@@ -280,8 +282,36 @@ Kadar za vsak $K \in \R$ obstaja $M \in \N$, da za vsak $n\ge M$ velja $a_n > K$
 
 Limes superior in limes inferior. To sta supremum in infimum množice vseh stekališč zaporedja.
 
-\subsection{Nekaj posebnih zaporedij}
+\vprasanje{Ali tudi za kompleksna zaporedja velja, da je konvergentno natanko tedaj, ko izpolnjuje Cauchyjev pogoj?}
 
-\vprasanje{Kaj je $\lim_{n\desno \infty} \sqrt[n]{n}$?}
+Da.
 
-1.
+\section{Številske vrste}
+
+\vprasanje{Kaj je številska vrsta? Kaj je splošni člen številske vrste?}
+
+To je neskončna formalna vsota realnega zaporedja $(a_n)$: \[
+	a_1 + a_2 + \ldots + a_k + \ldots = \sum_{k=1}^{\infty} a_k
+\]
+
+Splošni člen je število $a_k$.
+
+\vprasanje{Kdaj številska vrsta $\vrsta$ konvergira?}
+
+Kadar konvergira zaporedje delnih vsot $s_n = a_1 + a_2 + \ldots + a_n$.
+
+\vprasanje{Kam konvergira geometrijska vrsta $\sum_{n=0}^{\infty} aq^n$?}
+
+Če je $|q| < 1$, konvergira k $\frac{a}{1-q}$. Sicer ne konvergira.
+
+\vprasanje{Povej Cauchyjev pogoj za vrsto $\vrsta$. Kakšna je limita zaporedja $(a_n)$, če vrsta $\vrsta$ konvergira?}
+
+Vrsta konvergira natanko tedaj, kadar za vsak $\epsilon>0$ obstaja $n \in \N$, da za vse $n \ge N$ in za vse $p \in \N$ velja \[|a_{n+1} + a_{n+2} + \ldots + a_{n+p}| < \epsilon\].
+
+V takem primeru je $\lim_{n\desno \infty} a_n = 0$.
+
+\vprasanje{Kaj je harmonična vrsta?}
+
+\[
+	\sum_{n=1}^{\infty} \frac{1}{n}
+\]
