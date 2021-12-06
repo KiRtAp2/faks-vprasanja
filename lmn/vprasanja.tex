@@ -354,3 +354,35 @@ To je relacija $T \subseteq A\x A$, da velja:
 	\item $R \subseteq T$
 	\item $T$ je najmanjša tranzitivna relacija, ki vsebuje $R$
 \end{itemize}
+
+\subsection{Ekvivalenčne relacije}
+
+\vprasanje{Kdaj je $R \subseteq A\x A$ ekvivalenčna relacija?}
+
+Če je refleksivna, simetrična in tranzitivna.
+
+\vprasanje{Kaj je ekvivalenčna relacija, porojena s preslikavo?}
+
+To je relacija $\sim_f \subseteq A\x A$ za funkcijo $f:A\desno B$, za katero velja $x \sim_f y \nt f(x) = f(y)$.
+
+\vprasanje{Naj bo $E \subseteq A\x A$ ekvivalenčna relacija na $A$. Kaj je ekvivalenčni razred elementa $x \in A$? Kaj je kanonična kvocientna preslikava?}
+
+Ekvivalenčni razred je množica $[x]_E := \{y \in A | x E y\}$.
+
+Kanonična kvocientna preslikava je $q_E : A \desno A/E, x \slika [x]_E$.
+
+\vprasanje{Kaj velja za particijo $S \subseteq P(A)$ množice $A$?}
+
+\begin{enumerate}
+	\item $\forall B \in S. B \ne \emptyset$
+	\item $\forall B, C \in S. B = C \lor B \cap C = \emptyset$
+	\item $\bigcup S = A$
+\end{enumerate}
+
+\vprasanje{Kaj je izbor predstavnikov za ekvivalenčno relacijo $E \subseteq A\x A$?}
+
+To je množica $C \subseteq A$, ki vsak ekvivalenčni razred seka v natanko enem elementu: \[\forall \xi \in A/E. \exists! x \in A. x\in \xi \cap C\]
+
+\vprasanje{Povej aksiom izbire.}
+
+Vsaka družina nepraznih množic ima funkcijo izbire.

@@ -318,15 +318,15 @@ V takem primeru je $\lim_{n\desno \infty} a_n = 0$.
 
 \vprasanje{Povej primerjalni kriterij za številski vrsti z nenegativnimi členi. Kako imenujemo taki vrsti?}
 
-Naj bosta $\vrsta$ in $\cvrsta{b}$ številski vrsti z nenegativnimi členi. Denimo, da velja $a_n \le b_n$ za vse člene. 
+Naj bosta $\vrsta$ in $\cvrsta{b_n}$ številski vrsti z nenegativnimi členi. Denimo, da velja $a_n \le b_n$ za vse člene. 
 
-Če je $\cvrsta{b}$ konvergentna, potem je $\vrsta$ tudi konvergentna. 
+Če je $\cvrsta{b_n}$ konvergentna, potem je $\vrsta$ tudi konvergentna. 
 
-Če je $\vrsta$ divergentna, je tudi $\cvrsta{b}$ divergentna. 
+Če je $\vrsta$ divergentna, je tudi $\cvrsta{b_n}$ divergentna. 
 
-Vrsti $\cvrsta{b}$ rečemo \textit{majoreta} vrste $\vrsta$.
+Vrsti $\cvrsta{b_n}$ rečemo \textit{majoreta} vrste $\vrsta$.
 
-\vprasanje{Kdaj konvergira $\sum_{n=1}^{\infty} \frac{1}{n^p}$?}
+\vprasanje{Kdaj konvergira $\cvrsta{\frac{1}{n^p}}$?}
 
 Kadar je $p > 1$.
 
@@ -346,3 +346,21 @@ Naj bo $\vrsta$ vrsta z nenegativnimi členi. Sestavimo zaporedje $c_n = \sqrt[n
 	\item Če obstaja tak $q < 1$, da so $c_n \le q$ za vsak $n \in \N$, potem vrsta konvergira.
 	\item Če $c_n \ge 1$ za vsak $n \in \N$, potem vrsta divergira.
 \end{itemize}
+
+\vprasanje{Kaj je Raabejev kriterij?}
+
+Naj bo $\vrsta$ vrsta s pozitivnimi členi. Sestavimo zaporedje $r_n = n(\frac{a_n}{a_{n+1}} -1)$.
+\begin{itemize}
+	\item Če obstaja $r > 1$, da velja $r_n \ge r$ za vsak $n \in \N$, potem vrsta konvergira.
+	\item Če velja $r_n \le 1$ za vse $n \in \N$, potem vrsta divergira.
+\end{itemize}
+
+\vprasanje{Kdaj je $\vrsta$ absolutno konvergentna?}
+
+Kadar je konvergentna $\cvrsta{|a_n|}$.
+
+\vprasanje{Povej Leibnizov kriterij za alternirajoče vrste.}
+
+Naj bo $a_n$ padajoče zaporedje pozitivnih števil z limito $0$. Tedaj vrsta $\cvrsta{(-1)^n a_n}$ kovergira. Velja ocena \[
+	\left|\cvrsta{(-1)^n a_n} - \sum_{n=1}^{m} (-1)^n a_n\right| \le a_{m+1}
+\]
